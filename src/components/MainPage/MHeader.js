@@ -15,7 +15,7 @@ const Head = styled.header`
 const Web = styled.button`
   color: #878080;
   border: none;
-  margin-left: 60px;
+  margin-left: 100px;
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
 `;
@@ -24,7 +24,7 @@ const Login = styled.button`
   color: #878080;
   border: none;
   font-size: 30px;
-  margin-left: 900px;
+  margin-left: 850px;
   margin-top: 20px;
 `;
 

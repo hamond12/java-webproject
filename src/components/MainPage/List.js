@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
+const Listdiv = styled.div`
+  margin-top: 100px;
+`;
+
 const Stitle = styled.div`
-  position: fixed;
-  width: 90%;
+  width: 80%;
   font-size: 50px;
   font-weight: 500;
-  margin-left: 60px;
+  margin-left: 100px;
   margin-top: 10px;
   padding: 10px;
   top: 80px;
   border-bottom: 1px solid #e5e5e5;
+  display: flex;
 `;
 
 const Write = styled.button`
-  position: fixed;
-  top: 110px;
-  right: 0;
-  margin-right: 120px;
+  margin-left: 820px;
 
   background-color: #3fcdfa;
   color: white;
@@ -24,6 +25,7 @@ const Write = styled.button`
   border-radius: 5px;
 
   font-size: 15px;
+  font-weight: bolder;
   text-align: center;
 
   width: 120px;
@@ -31,12 +33,11 @@ const Write = styled.button`
 `;
 
 const Info = styled.div`
-  position: fixed;
   display: flex;
   width: 80%;
 
-  top: 180px;
-  margin-left: 80px;
+  margin-top: 10px;
+  margin-left: 120px;
 
   font-size: 25px;
 
@@ -61,9 +62,11 @@ const Time = styled.p`
 
 export default function List() {
   return (
-    <div>
-      <Stitle>게시글 List</Stitle>
-      <Write>글쓰기</Write>
+    <Listdiv>
+      <Stitle>
+        게시글 List
+        <Write>글쓰기</Write>
+      </Stitle>
       <Info>
         <p>조회수</p>
         <Category>카테고리</Category>
@@ -71,6 +74,6 @@ export default function List() {
         <Writer>작성자</Writer>
         <Time>시간</Time>
       </Info>
-    </div>
+    </Listdiv>
   );
 }

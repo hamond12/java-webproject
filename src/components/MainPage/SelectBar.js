@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Nlist = styled.div`
-  position: fixed;
-  top: 600px;
+  margin-top: 60px;
+  margin-left: 420px;
   text-align: center;
   left: 30%;
   display: flex;
@@ -18,12 +18,11 @@ const Number = styled.div`
 `;
 
 const Search = styled.div`
-  position: fixed;
   display: flex;
-  margin-left: 80px;
+  margin-top: 40px;
+  margin-left: 360px;
   padding-right: 40px;
-  height: 32px;
-  bottom: 40px;
+  height: 40px;
   left: 21%;
 `;
 
