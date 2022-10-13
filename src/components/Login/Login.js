@@ -12,7 +12,7 @@ const Container = styled.div`
 const Title = styled.button`
   margin-top: 50px;
   width: 100%;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   background-color: white;
   border: none;

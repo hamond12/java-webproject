@@ -5,7 +5,7 @@ const Listdiv = styled.div`
 `;
 
 const Stitle = styled.div`
-  width: 80%;
+  width: 90%;
   font-size: 50px;
   font-weight: 500;
   margin-left: 100px;

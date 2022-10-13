@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Ssectiondiv = styled.div`
+  height: 620px;
+`;
+
 const Column = styled.p`
   font-size: 22px;
   margin-top: 30px;
@@ -22,13 +26,25 @@ const PsEx = styled.p`
   font-size: 18px;
 `;
 
-const Btn = styled.button`
-  background-color: #6de5ff;
+const Btndiv = styled.div`
+  margin-left: 630px;
+  margin-top: 40px;
 `;
 
-export default function Header() {
+const Btn = styled.button`
+  background-color: #6de5ff;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  color: white;
+  height: 50px;
+  width: 20%;
+  font-size: 20px;
+`;
+
+export default function Ssection() {
   return (
-    <div>
+    <Ssectiondiv>
       <div>
         <Column>아이디</Column>
         <Box type="text"></Box>
@@ -40,7 +56,9 @@ export default function Header() {
         <Column>이름</Column>
         <Box type="text"></Box>
       </div>
-      <Btn>회원가입 ✔</Btn>
-    </div>
+      <Btndiv>
+        <Btn>회원가입 ✔</Btn>
+      </Btndiv>
+    </Ssectiondiv>
   );
 }
