@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+const Letterdiv = styled.div`
+  width: 100%;
+`;
 
 const Letter = styled.div`
   display: flex;
@@ -28,11 +33,13 @@ const Time = styled.p`
 
 export default function Letters() {
   return (
-    <div>
+    <Letterdiv>
       <Letter>
         <p>1</p>
         <Category>자유게시판</Category>
-        <Title>게시글 01</Title>
+        <Link to="/Community">
+          <Title>게시글 01</Title>
+        </Link>
         <Writer>User_01</Writer>
         <Time>2022-08-18 11:14</Time>
       </Letter>
@@ -64,6 +71,6 @@ export default function Letters() {
         <Writer>User_01</Writer>
         <Time>2022-08-18 11:14</Time>
       </Letter>
-    </div>
+    </Letterdiv>
   );
 }

@@ -31,7 +31,9 @@ const Login = styled.button`
 export default function Header() {
   return (
     <Head>
-      <Web>SpringBoot Community Web</Web>
+      <Link to="/">
+        <Web>SpringBoot Community Web</Web>
+      </Link>
       <Link to="/Login">
         <Login>LOGIN</Login>
       </Link>

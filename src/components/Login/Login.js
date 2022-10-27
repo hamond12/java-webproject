@@ -66,7 +66,7 @@ const Signup = styled.button`
   border: 1px solid black;
 `;
 
-function Home() {
+export default function Home() {
   return (
     <Container>
       <Link to="/">
@@ -84,5 +84,3 @@ function Home() {
     </Container>
   );
 }
-
-export default Home;

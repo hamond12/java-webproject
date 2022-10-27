@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Selectdiv = styled.div`
+  width: 100%;
+`;
+
 const Nlist = styled.div`
   margin-top: 60px;
   margin-left: 420px;
@@ -46,7 +50,7 @@ const Sbtn = styled.button`
 
 export default function SelectBar() {
   return (
-    <div>
+    <Selectdiv>
       <Nlist>
         <Number>◀</Number>
         <Number>◁</Number>
@@ -67,6 +71,6 @@ export default function SelectBar() {
         <SearchBar placeholder="검색어"></SearchBar>
         <Sbtn>검색</Sbtn>
       </Search>
-    </div>
+    </Selectdiv>
   );
 }
