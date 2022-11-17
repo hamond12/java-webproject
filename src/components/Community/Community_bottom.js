@@ -28,19 +28,19 @@ const Commentlist = styled.div`
 
 const Author = styled.span`
   text-align: center;
-  width: 100px;
+  width: 10%;
   border-right: 1px solid black;
 `;
 
 const Story = styled.span`
-  text-align: center;
-  width: 300px;
+  margin-left: 20px;
+  width: 80%;
   border-right: 1px solid black;
 `;
 
 const Date = styled.span`
-  padding-left: 10px;
-  width: 100%;
+  text-align: center;
+  width: 17%;
 `;
 
 const Tbdiv = styled.div`
@@ -85,7 +85,7 @@ export default function Community_bottom() {
       <Commentlist>
         <Author>이동훈</Author>
         <Story>멋진 글이네요</Story>
-        <Date>날짜</Date>
+        <Date>2022-08-18 12:09</Date>
       </Commentlist>
       <Tbdiv>
         <Textbox rows="10" cols="150" placeholder="내용을 입력해주세요" />
