@@ -1,32 +1,31 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Listdiv = styled.div`
-  width: 100%;
   margin-top: 100px;
 `;
 
 const Stitle = styled.div`
-  width: 90%;
+  width: 80%;
   font-size: 50px;
   font-weight: 500;
   margin-left: 100px;
   margin-top: 10px;
   padding: 10px;
-  top: 80px;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
 `;
 
 const Write = styled.button`
   margin-left: 820px;
+  margin-bottom: 10px;
 
   background-color: #3fcdfa;
   color: white;
   border: none;
   border-radius: 5px;
 
-  font-size: 15px;
-  font-weight: bolder;
+  font-size: 20px;
   text-align: center;
 
   width: 120px;
@@ -66,7 +65,9 @@ export default function List() {
     <Listdiv>
       <Stitle>
         게시글 List
-        <Write>글쓰기</Write>
+        <Link to="/Write">
+          <Write>글쓰기</Write>
+        </Link>
       </Stitle>
       <Info>
         <p>조회수</p>

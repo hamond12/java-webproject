@@ -43,6 +43,10 @@ const Date = styled.span`
   width: 100%;
 `;
 
+const Tbdiv = styled.div`
+  margin-top: -40px;
+`;
+
 const Textbox = styled.textarea`
   width: 80%;
   margin-top: 100px;
@@ -66,6 +70,8 @@ const Sub = styled.input`
 
 const Subdiv = styled.div`
   width: 81%;
+  margin-top: 20px;
+  margin-bottom: 100px;
 `;
 
 export default function Community_bottom() {
@@ -81,9 +87,9 @@ export default function Community_bottom() {
         <Story>멋진 글이네요</Story>
         <Date>날짜</Date>
       </Commentlist>
-      <div>
+      <Tbdiv>
         <Textbox rows="10" cols="150" placeholder="내용을 입력해주세요" />
-      </div>
+      </Tbdiv>
       <Subdiv>
         <Sub input type="submit" value="댓글쓰기" />
       </Subdiv>

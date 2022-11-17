@@ -24,6 +24,7 @@ const Number = styled.div`
 const Search = styled.div`
   display: flex;
   margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: 360px;
   padding-right: 40px;
   height: 40px;
